@@ -1,0 +1,31 @@
+.container {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: 4fr 5fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "wallets graph graph"
+    "wallets buysell transactions"
+}
+
+.item {
+  border: 1px solid lightgrey;
+}
+
+.wallets {
+  grid-area: wallets;
+}
+
+.graph {
+  grid-area: graph;
+}
+
+.buysell {
+  grid-area: buysell;
+}
+
+.transactions {
+  grid-area: transactions;
+}
