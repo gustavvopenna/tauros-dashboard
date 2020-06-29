@@ -2,7 +2,7 @@
   height: 100vh;
 
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 4fr 5fr;
   grid-gap: 25px;
   grid-template-areas:

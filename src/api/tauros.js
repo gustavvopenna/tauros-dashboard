@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import crypto from 'crypto'
 
 export const useFetch = (path, method, data) => {

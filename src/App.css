@@ -1,0 +1,17 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-black: #141f30;
+  --bluey-grey: #8696a8;
+  --pale-blue: #dee5ee;
+  --pale-gray: #f7f9fb;
+}
+
+body {
+  font-family: 'DINPro Medium';
+  padding: 25px;
+}
+
+p {
+  margin: 0;
+}
