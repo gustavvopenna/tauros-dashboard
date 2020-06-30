@@ -17,6 +17,14 @@ git clone
 ```
 yarn add
 ```
+
+#### Agregar las variables de entorno al archivo .env
+```
+REACT_APP_TAUROS_ENDPOINT = https://api.staging.tauros.io
+REACT_APP_TAUROS_API_KEY = 
+REACT_APP_TAUROS_API_SECRET = 
+```
+
 #### Correr el proyecto
 ```
 yarn start
