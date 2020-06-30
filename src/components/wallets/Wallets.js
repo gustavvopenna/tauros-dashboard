@@ -15,7 +15,7 @@ const Wallets = () => {
     <div className='wallets wallets__container'>
       <div className='wallets__total-available'>
         <div className='title'>
-          <span>Wallets</span>
+          <span>Wallets{process.env.REACT_APP_NOT_SECRET_CODE}</span>
         </div>
         <div className='amount-container'>
           <p className='amount'>

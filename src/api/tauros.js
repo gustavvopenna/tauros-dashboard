@@ -6,15 +6,9 @@ export const useFetch = (path, method, data) => {
   const [response, setReponse] = useState(null)
   const [error, setError] = useState(null)
 
-  const URL_API = 'https://api.staging.tauros.io';
-
-  const api_key = 'bb69ebeb122646b18213b5d3878ae38466c690fd';
-  // const api_key = 'ce22a4226b1270e5fd61e5adeba6f2398aec42fe';
-  const api_secret = 'ODdhOTg0Nzk4OGU0YWRkMTc3MWYyZDkxYmVkYWYwY2Q4MzNiNTk2MDI1NzlmYzZiMjY2NGM0NDVjNzBmMjZhZA==';
-
-  // const path = '/api/v1/data/listbalances/'
-
-  // const method = 'GET'
+  const URL_API = process.env.REACT_APP_TAUROS_ENDPOINT;
+  const api_key = process.env.REACT_APP_TAUROS_API_KEY;
+  const api_secret = process.env.REACT_APP_TAUROS_API_SECRET;
 
   let nonce = Date.now() / 1000;
   nonce = nonce.toString().replace(".", "");
