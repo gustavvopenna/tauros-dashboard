@@ -9,6 +9,7 @@ export const useFetch = (path, method, data) => {
   const URL_API = 'https://api.staging.tauros.io';
 
   const api_key = 'bb69ebeb122646b18213b5d3878ae38466c690fd';
+  // const api_key = 'ce22a4226b1270e5fd61e5adeba6f2398aec42fe';
   const api_secret = 'ODdhOTg0Nzk4OGU0YWRkMTc3MWYyZDkxYmVkYWYwY2Q4MzNiNTk2MDI1NzlmYzZiMjY2NGM0NDVjNzBmMjZhZA==';
 
   // const path = '/api/v1/data/listbalances/'

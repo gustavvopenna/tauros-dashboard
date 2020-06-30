@@ -26,11 +26,13 @@ const Wallets = () => {
           </p>
         </div>
       </div>
-      {walletsAvailable ?
-        wallets.map((wallet) => (
-          <Wallet key={wallet.coin} wallet={wallet} />
-        )) : null
-      }
+      <div className='wallets__all'>
+        {walletsAvailable ?
+          wallets.map((wallet) => (
+            <Wallet key={wallet.coin} wallet={wallet} />
+          )) : null
+        }
+      </div>
     </div>
   )
 }

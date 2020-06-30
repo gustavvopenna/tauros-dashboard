@@ -1,15 +1,22 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --black-two: #070707;
   --light-black: #141f30;
   --bluey-grey: #8696a8;
   --pale-blue: #dee5ee;
   --pale-gray: #f7f9fb;
+  --mango: #feb937;
+  --light-gold: #fcd961;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'DINPro Medium';
-  padding: 25px;
+  /* padding: 25px; */
 }
 
 p {

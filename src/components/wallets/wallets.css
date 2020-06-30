@@ -2,6 +2,7 @@
   border-radius: 4px;
   border: solid 1px var(--pale-blue);
   background-color: var(--white);
+  overflow: scroll;
 }
 
 .wallets__total-available {
@@ -51,5 +52,9 @@
   letter-spacing: normal;
   text-align: right;
   color: var(--bluey-grey);
+}
+
+.wallets__all {
+  overflow: scroll;
 }
 

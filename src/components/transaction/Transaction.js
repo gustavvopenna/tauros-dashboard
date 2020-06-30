@@ -8,7 +8,9 @@ const TradeType = ({ transaction }) => {
   const title = transaction.side === 'BUY' ? 'Compra' : 'Venta'
 
   const date = formatDate(transaction.closed_at)
-  const currency = formatCurrency(transaction.amount_paid)
+  const amount = transaction.side === 'BUY' ? transaction.amount_received : -(transaction.amount_paid)
+  const currency = transaction.side === 'BUY' ? formatCurrency(transaction.amount_paid) : formatCurrency(transaction.amount_received)
+  const symbol = transaction.side === 'BUY' ? '-' : '+'
 
   return (
     <Fragment>
@@ -22,10 +24,10 @@ const TradeType = ({ transaction }) => {
       </div>
       <div>
         <p className='amount'>
-          {transaction.amount_received} {transaction.left_coin}
+          {amount} {transaction.left_coin}
         </p>
         <p className='amount-pesos'>
-          {currency}
+          {symbol} {currency}
         </p>
       </div>
     </Fragment>

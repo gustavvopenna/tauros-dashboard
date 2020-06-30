@@ -1,0 +1,141 @@
+.trading {
+  border-radius: 4px;
+  border: solid 1px var(--pale-blue);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.buttons-container {
+  display: inline-block;
+  background-color: #f7f9fb;
+  border-radius: 25px;
+}
+
+.trading .buy-button,
+.trading .sell-button {
+  border: none;
+  border-radius: 25px;
+  background-color: #f7f9fb;
+  padding: 13px 20px;
+  min-width: 140px;
+
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.86;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--bluey-grey);
+}
+
+.trading .buy-button {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.trading .sell-button {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.trading .sell-button.active {
+  border-radius: 25px;
+  border: solid 1px var(--bluey-grey);
+  background-color: var(--white);
+
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.86;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black-two);
+}
+
+.trading-card {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px 36px 0px;
+
+  width: 335px;
+  height: 207px;
+  border-radius: 18px;
+  box-shadow: 0 10px 38px -10px rgba(134, 150, 168, 0.5), 0 10px 10px -10px rgba(134, 150, 168, 0.25);
+  border: solid 0.5px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to bottom, var(--mango), var(--light-gold) 50%);
+}
+
+.trading-card .body-top {
+  flex-grow: 1;
+
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 31px;
+}
+
+.trading-card .body-top .max-button {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  border: none;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  mix-blend-mode: multiply;
+  border-radius: 15px;
+  background-color: rgba(7, 7, 7, 0.04);
+}
+
+.trading-card .body-top .change-button {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  border: none;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  mix-blend-mode: multiply;
+  border-radius: 15px;
+  background-color: rgba(7, 7, 7, 0.04);
+}
+
+.trading-card .body-top .amount {
+  font-size: 39px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.82;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: var(--black-two);
+
+  margin-bottom: 16px;
+}
+
+.trading-card .body-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 58px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.trading-card .body-bottom p {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+}
