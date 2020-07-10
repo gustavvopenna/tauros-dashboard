@@ -15,7 +15,7 @@ git clone
     
 #### Instalar las dependencias
 ```
-yarn add
+yarn
 ```
 
 #### Agregar las variables de entorno al archivo .env
